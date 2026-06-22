@@ -1,0 +1,22 @@
+{
+  "name": "cortex-ai",
+  "version": "1.0.0",
+  "description": "Cortex AI — Multi-tenant AI Discord bot with web dashboard",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "bot": "node bot/index.js",
+    "bot:dev": "node --watch bot/index.js",
+    "dashboard": "node dashboard/server/server.js",
+    "dashboard:dev": "node --watch dashboard/server/server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "winston": "^3.11.0"
+  }
+}
